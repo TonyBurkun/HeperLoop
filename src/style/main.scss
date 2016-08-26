@@ -1,5 +1,3 @@
 @import "../../bower_components/normalize.css/normalize.css";
-
-body{
-  background: #000;
-}
+@import "parts/_variables.scss";
+@import "parts/_common.scss";

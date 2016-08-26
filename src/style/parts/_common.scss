@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('fonts/Montserrat-Regular.eot'), /* IE9 Compat Modes  .eot*/
+       url('fonts/Montserrat-Regular.ttf')  format('truetype'); /* Safari, Android, iOS .ttf*/
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('fonts/Montserrat-Bold.eot'), /* IE9 Compat Modes  .eot*/
+  url('fonts/Montserrat-Bold.ttf')  format('truetype'); /* Safari, Android, iOS .ttf*/
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: url('fonts/WorkSans-Regular.eot'), /* IE9 Compat Modes  .eot*/
+  url('fonts/WorkSans-Regular.ttf')  format('truetype'); /* Safari, Android, iOS .ttf*/
+}
+
+a{
+  text-decoration: none;
+}
