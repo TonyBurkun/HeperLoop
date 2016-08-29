@@ -12,8 +12,9 @@
     "test",
     "tests"
   ],
-  "dependencies":{
+  "dependencies": {
     "normalize.css": "*",
-    "jquery": "2.*"
+    "jquery": "2.*",
+    "fullpage.js": "^2.8.4"
   }
 }

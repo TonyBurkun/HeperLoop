@@ -1,21 +1,42 @@
 @font-face {
   font-family: 'Montserrat-Regular';
-  src: url('fonts/Montserrat-Regular.eot'), /* IE9 Compat Modes  .eot*/
-       url('fonts/Montserrat-Regular.ttf')  format('truetype'); /* Safari, Android, iOS .ttf*/
+  src: url('../fonts/Montserrat-Regular.eot'); /* IE9 Compat Modes  .eot*/
+  src: url('../fonts/Montserrat-Regular.ttf')  format('truetype'); /* Safari, Android, iOS .ttf*/
 }
 
 @font-face {
   font-family: 'Montserrat-Bold';
-  src: url('fonts/Montserrat-Bold.eot'), /* IE9 Compat Modes  .eot*/
-  url('fonts/Montserrat-Bold.ttf')  format('truetype'); /* Safari, Android, iOS .ttf*/
+  src: url('../fonts/Montserrat-Bold.eot'); /* IE9 Compat Modes  .eot*/
+  src: url('../fonts/Montserrat-Bold.ttf')  format('truetype'); /* Safari, Android, iOS .ttf*/
 }
 
 @font-face {
   font-family: 'WorkSans-Regular';
-  src: url('fonts/WorkSans-Regular.eot'), /* IE9 Compat Modes  .eot*/
-  url('fonts/WorkSans-Regular.ttf')  format('truetype'); /* Safari, Android, iOS .ttf*/
+  src: url('../fonts/WorkSans-Regular.eot'); /* IE9 Compat Modes  .eot*/
+  src: url('../fonts/WorkSans-Regular.ttf')  format('truetype'); /* Safari, Android, iOS .ttf*/
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  //min-width: 1190px;
+  padding: 0 10px;
+  font-family: WorkSans-Regular, sans-serif;
+  font-size: 18px;
 }
 
 a{
   text-decoration: none;
+}
+
+.container{
+  width: 1170px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  @media (max-width: 1170px){
+    width: 100%;
+  }
 }
