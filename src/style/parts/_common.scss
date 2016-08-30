@@ -18,6 +18,7 @@
 
 *{
   box-sizing: border-box;
+  outline: none;
 }
 
 body{
@@ -32,6 +33,7 @@ a{
 }
 
 .container{
+  overflow: hidden;
   width: 1170px;
   padding: 0 10px;
   margin: 0 auto;
@@ -39,4 +41,17 @@ a{
   @media (max-width: 1170px){
     width: 100%;
   }
+}
+
+.btn{
+  display: inline-block;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 24px;
+  transition: font-size ease-out 0.5s;
+  font-weight: 700;
+  font-family: Montserrat-Bold, sans-serif;
+  padding: 14px 46px;
 }
