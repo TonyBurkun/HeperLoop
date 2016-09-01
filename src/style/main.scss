@@ -39,11 +39,11 @@
   line-height: 100px;
   padding: 0 140px;
   margin-bottom: 0;
-  font-family: Montserrat-Bold, sans-serif;
+  font-family: $font-title-capture;
   font-size: 72px;
   font-weight: 700;
   text-align: center;
-  color: #fff;
+  color: $base-font-color;
   transition: font-size ease-out 0.5s;
 
   @media (max-width: $break-point){
@@ -55,7 +55,7 @@
 
   span{
     color: #3b0000;
-    background-color: rgba(255,255,255, .4 );
+    background-color: rgba($base-font-color, .4 );
     padding: 0 10px;
 
   }
@@ -80,7 +80,7 @@
 }
 
 .one-advantage{
-  color: #fff;
+  color: $base-font-color;
 
   & > span {
     margin: 0 auto;
@@ -95,7 +95,7 @@
   }
 
   & > h2 {
-    font-family: Montserrat-Bold, sans-serif;
+    font-family: $font-title-capture;
     font-size: 30px;
     transition: font-size ease-out 0.5s;
     font-weight: 700;
@@ -110,7 +110,7 @@
   }
 
   & > p {
-    font-family: WorkSans-Regular, sans-serif;
+    font-family: $base-font;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
@@ -203,8 +203,8 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 27px;
-    font-family: Montserrat-Bold, sans-serif;
-    color: #fff;
+    font-family: $font-title-capture;
+    color: $base-font-color;
     display: block;
     margin: 100% 0 0 0;
     text-align: center;
@@ -219,13 +219,13 @@
 
   &__h2{
     display: inline-block;
-    font-family: Montserrat-Bold, sans-serif;
-    color: #fff;
+    font-family: $font-title-capture;
+    color: $base-font-color;
     font-size: 48px;
     transition: font-size ease-out 0.5s;
     font-weight: 700;
     line-height: 27px;
-    border-bottom: 5px solid #fff;
+    border-bottom: 5px solid $base-font-color;
     padding-bottom: 16px;
     margin-top: 140px;
     margin-bottom: 30px;
@@ -236,8 +236,8 @@
   }
 
   &__p{
-    color: white;
-    font-family: WorkSans-Regular, sans-serif;
+    color: $base-font-color;
+    font-family: $base-font;
     font-size: 18px;
     transition: font-size ease-out 0.5s;
     font-weight: 400;
@@ -255,6 +255,11 @@
     @media (max-width: $break-point){
       font-size: 18px;
     }
+  }
+
+  &__btn--hover:hover{
+    background: $base-font-color;
+    color: #222;
   }
 }
 
@@ -281,8 +286,8 @@
   }
 
   &__title{
-    color: white;
-    font-family: Montserrat-Bold, sans-serif;
+    color: $base-font-color;
+    font-family: $font-title-capture;
     font-size: 21px;
     font-weight: 700;
     text-transform: uppercase;
@@ -327,10 +332,10 @@
   position: relative;
   padding: 28px 0;
   width: 218px;
-  border: 3px solid white;
+  border: 3px solid $base-font-color;
   border-radius: 12px;
-  color: white;
-  font-family: Montserrat-Bold, sans-serif;
+  color: $base-font-color;
+  font-family: $font-title-capture;
   font-weight: 700;
   font-size: 72px;
   text-align: center;
@@ -360,11 +365,11 @@
 }
 
 .options-list{
-  font-family: Montserrat-Regular, sans-serif;
+  font-family: $font-subtitle;
   font-size: 21px;
   font-weight: 400;
   line-height: 36px;
-  color: white;
+  color: $base-font-color;
   text-align: center;
 
   &__item{
@@ -380,12 +385,12 @@
 }
 
 .column__btn--hover:hover{
-  background: #fff;
+  background: $base-font-color;
   color: #e85859;
 }
 
 .column--hover:hover .column__price{
-  background: #fff;
+  background: $base-font-color;
   color: #e85859;
 }
 
@@ -446,7 +451,7 @@
 
   margin: 0;
   color: #6fc2b7;
-  font-family: Montserrat-Bold, sans-serif;
+  font-family: $font-title-capture;
   font-size: 62px;
   transition: font-size ease-out 0.5s;
   font-weight: 700;
@@ -461,7 +466,7 @@
 
 .sharing-subtitle{
   color: #2a2a2a;
-  font-family: WorkSans-Regular, sans-serif;
+  font-family: $base-font;
   font-size: 21px;
   transition: font-size, margin ease-out 0.5s;
   font-weight: 400;
@@ -495,7 +500,7 @@
     padding: 0;
     border-radius: 36px;
     text-align: center;
-    font-family: Montserrat-Bold, sans-serif;
+    font-family: $font-title-capture;
     font-size: 24px;
     font-weight: 700;
     text-transform: lowercase;
@@ -509,23 +514,36 @@
     }
   }
 
-  &__btn-pin {
-    background-color: #cb2126;
+  &__pin {
+    background-color: $social-pin-color;
+
   }
 
-  &__btn-share {
-    background-color: #4c66a4;
+  &__share {
+    background-color: $social-share-color;
   }
 
-  &__btn-tweet {
-    background-color: #6faedd;
+  &__tweet {
+    background-color: $social-tweet-color;
+  }
+
+  &__pin--hover:hover{
+    background-color: darken($social-pin-color, 10%);
+  }
+
+  &__share--hover:hover{
+    background-color: darken($social-share-color,10%);
+  }
+
+  &__tweet--hover:hover{
+    background-color: darken($social-tweet-color, 10%);
   }
 
   &__number{
     display: block;
     text-align: center;
     color: #2c2c2c;
-    font-family: Montserrat-Regular, sans-serif;
+    font-family: $font-subtitle;
     font-size: 18px;
     font-weight: 400;
     opacity: 0.45;
@@ -564,8 +582,8 @@
 
   &__copyright{
     display: block;
-    color: white;
-    font-family: Montserrat-Regular, sans-serif;
+    color: $base-font-color;
+    font-family: $font-subtitle;
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
@@ -573,7 +591,7 @@
     opacity: 0.65;
     padding-top: 50px;
     margin-top: 50px;
-    border-top: 2px solid #fff;
+    border-top: 2px solid $base-font-color;
 
 
   }
@@ -586,10 +604,14 @@
 }
 
 .navigation-link{
-  color: #fff;
-  font-family: Montserrat-Bold, sans-serif;
+  color: $base-font-color;
+  font-family: $font-title-capture;
   font-size: 24px;
   font-weight: 700;
+}
+
+.navigation-link--hover:hover{
+  border-bottom: 2px solid;
 }
 
 

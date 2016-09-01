@@ -52,8 +52,8 @@ a{
 .btn{
   display: inline-block;
   text-transform: uppercase;
-  border: 3px solid #fff;
-  color: #fff;
+  border: 3px solid $base-font-color;
+  color: $base-font-color;
   border-radius: 30px;
   font-size: 24px;
   transition: font-size ease-out 0.5s;
